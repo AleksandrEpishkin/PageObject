@@ -12,7 +12,7 @@ install:
   # добавления прав на запуск файла gradlew
   - chmod +x gradlew
   # запускаем SUT (& означает, что в фоновом режиме - не блокируем терминал для запуска тестов)
-  - java -jar ./artifacts/app-ibank-build-for-testers.jar -P:profile=test &
+  - java -jar ./artifacts/app-ibank-build-for-testers.jar
 
 build_script:
   # запускаем тест, флаг --info позволяет выводить больше информации, флаг -Dselenide.headless=true запуск selenide
